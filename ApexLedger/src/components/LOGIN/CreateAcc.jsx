@@ -3,20 +3,25 @@ import AuthHead from '../Authpages/AuthHead'
 import UserInput from '../Authpages/UserInput'
 import Button from '../Authpages/Button'
 import AuthFoot from '../Authpages/AuthFoot'
-
+import { MdOutlineEmail } from "react-icons/md";
+import { IoLockClosedOutline } from "react-icons/io5";
+import { CiUser } from "react-icons/ci";
 const CreateAcc = () => {
     const data = [
         {
+            icon:<CiUser className='text-black font-black'/>,
             label1: "full name",
             type: "text",
             ph: "Enter Your name",
         },
         {
+            icon:<MdOutlineEmail className='text-black'/>,
             label1: "Email Address",
             type: "Email",
             ph: "Enter Email"
         },
         {
+            icon:<IoLockClosedOutline className='text-black'/>,
             label1: "Enter Password",
             type: "Password",
             ph: "Enter Password"
@@ -30,6 +35,7 @@ const CreateAcc = () => {
                 data.map((item, index) => (
                     <UserInput
                         key={index}
+                        icon={item.icon}
                         label={item.label1}
                         type={item.type}
                         plh={item.ph}

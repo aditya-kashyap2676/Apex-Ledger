@@ -8,6 +8,16 @@ const App = () => {
     <div>
       <Home/>
       <Footer/>
+import Navbar from './components/Navbar/Navbar'
+
+const App = () => {
+  return (
+    <div>
+      {/* <Complogin/> */}
+      {/* <Login/> */}
+      {/* <CreateAcc/> */}
+      <Navbar/>
+
     </div>
   )
 }

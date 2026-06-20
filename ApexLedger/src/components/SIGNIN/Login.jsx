@@ -3,15 +3,19 @@ import UserInput from '../Authpages/UserInput'
 import AuthHead from '../Authpages/AuthHead'
 import Button from '../Authpages/Button'
 import AuthFoot from '../Authpages/AuthFoot'
-
+import { FaArrowRight } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { IoLockClosedOutline } from "react-icons/io5";
 const Login = () => {
     const data = [
         {
+            icon: <MdOutlineEmail className='text-black'/>,
             label1: "Email Address",
             type: "Email",
             ph: "Enter Email"
         },
-        {
+        {   
+            icon: <IoLockClosedOutline className='text-black'/> ,
             label1: "Enter Password",
             type: "Password",
             ph: "Enter Password"
@@ -25,13 +29,14 @@ const Login = () => {
                     data.map((item, index) => (
                         <UserInput
                             key={index}
+                            icon={item.icon}
                             label={item.label1}
                             type={item.type}
                             plh={item.ph}
                         />
                     ))
                 }
-                <Button butt={"establish sesssion"}/>
+                <Button butt={"establish sesssion" } />
                 <hr  className='text-gray-200 h-fit w-full mt-4'/>
                 <AuthFoot cont={"Don't Have a Profile ?"} spn={"Register Now"}/>
             </div>
