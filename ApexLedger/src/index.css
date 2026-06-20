@@ -1,2 +1,17 @@
+@font-face {
+    font-family: Orbitron;
+    src: url(../src/assets/fonts/Orbitron-Regular.ttf);
+}
+@font-face {
+      font-family: Montserrat;
+    src: url(../src/assets/fonts/Montserrat-Regular.ttf);
+}
+
+
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap'); */
+
+@theme{
+    --font-Orbitron: Orbitron, "sans-serif";
+    --font-Montserrat: Montserrat, "sans-serif";
+}
