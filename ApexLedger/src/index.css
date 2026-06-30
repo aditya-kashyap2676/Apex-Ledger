@@ -2,34 +2,30 @@
 @import "tailwindcss";
 
 @theme {
-    --color-primary-charcoal :#1C1C1C;
-    --color-primary-gray :#f8f9fb;
-    --color-primary-deep-gray :#39464f;
-    --color-primary-emerald :#02a66a;
-    --color-primary-deep-emerald :#2a8768;
-    --color-primary-blue :#45b0ab;
-    --color-secondary-blue :#1bbfb7;
-    --color-secondary-deep-blue :#0b1d45;
+    --color-primary-charcoal: #1C1C1C;
+    --color-primary-gray: #f8f9fb;
+    --color-primary-deep-gray: #39464f;
+    --color-primary-emerald: #02a66a;
+    --color-primary-deep-emerald: #2a8768;
+    --color-primary-blue: #45b0ab;
+    --color-secondary-blue: #1bbfb7;
+    --color-secondary-deep-blue: #0b1d45;
+    --font-Orbitron: Orbitron, "sans-serif";
+    --font-Montserrat: Montserrat, "sans-serif";
 }
 
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
 @font-face {
     font-family: Orbitron;
     src: url(../src/assets/fonts/Orbitron-Regular.ttf);
 }
+
 @font-face {
-      font-family: Montserrat;
+    font-family: Montserrat;
     src: url(../src/assets/fonts/Montserrat-Regular.ttf);
 }
 
-
-@import "tailwindcss";
-/* @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;800&display=swap'); */
-
-@theme{
-    --font-Orbitron: Orbitron, "sans-serif";
-    --font-Montserrat: Montserrat, "sans-serif";
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

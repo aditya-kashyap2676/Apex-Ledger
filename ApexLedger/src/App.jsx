@@ -1,23 +1,16 @@
 import React from 'react'
-import Login from './components/SIGNIN/Login'
-import CreateAcc from './components/LOGIN/CreateAcc'
+import Login from './components/Login'
+import CreateAcc from './components/CreateAcc'
 import Home from './pages/Home'
 import Footer from './components/Footer'
+import Header from './components/Header'
 const App = () => {
   return (
     <div>
+      {/* <Login/> */}
+      <Header/>
       <Home/>
       <Footer/>
-import Navbar from './components/Navbar/Navbar'
-
-const App = () => {
-  return (
-    <div>
-      {/* <Complogin/> */}
-      {/* <Login/> */}
-      {/* <CreateAcc/> */}
-      <Navbar/>
-
     </div>
   )
 }
