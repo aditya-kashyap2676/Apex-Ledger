@@ -10,7 +10,7 @@ const Bar = () => {
         { icon: <BiCheckShield />, val: "Zero", desc: "external dataleaks" },
     ]
     return (
-        <div className='border-2 border-l-0 border-r-0 border-primary-charcoal/5 flex justify-around py-8 px-4'>
+        <div className='border-2 border-l-0 border-r-0 border-primary-charcoal/5 md:flex md:justify-around grid grid-cols-2 gap-4 py-8 px-4'>
             {def.map((item, index) => {
                 return <Tabs icon={item.icon} value={item.val} description={item.desc} index = {index}/>
             })}
@@ -23,7 +23,7 @@ export default Bar
 
 const Tabs = ({ icon, description, value,index }) => {
     return (
-        <div className='space-y-4'>
+        <div className='space-y-4 '>
             <div >
                 <p className='flex items-center gap-2 font-[Orbitron] font-extrabold justify-center text-2xl tracking-tight'><span className={` ${index % 2 === 0 ? "text-primary-emerald" : "text-primary-blue"}`}>{icon}</span>{value}</p>
             </div>

@@ -1,9 +1,9 @@
 import React from 'react'
 const UserInput = ({icon,label,type,plh}) => {
   return (
-    <div className='flex flex-col leading-10'>
-      <label className='font-semibold uppercase text-sm mt-5 font-sans text-gray-700 flex items-center gap-2'>{icon}{label}</label>
-      <input type={type} placeholder={plh} className='border-1 border-gray-300 rounded-xl bg-gray-50 pl-2'/>
+    <div className='flex flex-col space-y-1'>
+      <label className='font-black uppercase text-xs font-Montserrat text-zinc-800 flex items-center gap-2'>{icon}{label}</label>
+      <input type={type} placeholder={plh} className='border border-gray-300 rounded-lg bg-gray-50  focus:outline-none w-full py-2 px-4 placeholder:text-zinc-400'/>
 
     </div>
   )
