@@ -7,6 +7,7 @@ const Header = () => {
             <ul className='center w-full'>
                 <li className='center gap-4 font-[Orbitron] font-extrabold md:text-2xl mr-auto  drop-shadow-amber-500'><FaMoneyBillTrendUp className='text-primary-emerald text-4xl border-2 rounded-lg p-1'/> <span className='uppercase drop-shadow-[1px_1px] drop-shadow-primary-emerald'>apex ledger</span></li>
                 <li><Button butt={"Access Gateway"} color={"bg-gray-700"} /></li>
+                
 
             </ul>
         </div>
