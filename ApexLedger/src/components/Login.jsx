@@ -6,7 +6,9 @@ import AuthFoot from './Authpages/AuthFoot'
 import { FaArrowRight } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { IoLockClosedOutline } from "react-icons/io5";
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
+    const nav = useNavigate()
     const data = [
         {
             icon: <MdOutlineEmail className='text-black' />,
